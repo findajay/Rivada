@@ -8,10 +8,6 @@ terraform {
       source  = "hashicorp/azuread"
       version = ">= 2.52.0"
     }
-    azuredevops = {
-      source  = "microsoft/azuredevops"
-      version = ">= 0.7.0"
-    }
   }
   
   # backend "azurerm" {
@@ -24,8 +20,4 @@ terraform {
 
 provider "azurerm" {
  features {}
-}
-
-provider "azuredevops" {
-  org_service_url = "https://dev.azure.com/Rivada"
 }
